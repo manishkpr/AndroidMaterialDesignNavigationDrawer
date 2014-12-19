@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="app_main">#C60A00</color>
+    <color name="app_main_dark">#9A0D00</color>
+    <color name="app_bg">#F4F0E8</color>
+    
+    <color name="black">#000</color>
+    <color name="white">#FFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="sky">#2196F3</color>
+    <color name="gray_dark">#424242</color>
+    <color name="gray_light">#EEEEEE</color>
+    
+    <color name="myPrimaryColor">#3F51B5</color>
+    <color name="myPrimaryDarkColor">#3F51B5</color>
+    <color name="myAccentColor">#3F51B5</color>
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
+
+    <color name="selected_gray">#ffdbdbdb</color>
+    
+</resources>
