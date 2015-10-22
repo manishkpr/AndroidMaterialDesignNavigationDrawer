@@ -23,6 +23,7 @@ public class SlidingMenuFragment extends Fragment {
 	void setUpView(ViewGroup root){
 		list_view  =  (ListView)root.findViewById(R.id.list_view);
 		initList();
+		setUpClick();
 	}
 	void initList(){
 		data = new ArrayList<String>();
@@ -33,5 +34,13 @@ public class SlidingMenuFragment extends Fragment {
 		
 		adapter = new SlidingMenuListAdapter(getActivity(),data);
 		list_view.setAdapter(adapter);
+	}
+	void setUpClick(){
+		list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            		@Override
+            		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                	Toast.makeText(getActivity(),"Hi "+position,Toast.LENGTH_SHORT).show();
+            	}
+        	});
 	}
 }
