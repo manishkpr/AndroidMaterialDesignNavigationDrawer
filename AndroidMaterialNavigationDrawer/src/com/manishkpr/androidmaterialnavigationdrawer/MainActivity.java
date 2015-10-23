@@ -13,7 +13,7 @@ import android.view.View;
 @SuppressLint("NewApi")
 public class MainActivity extends BaseActivity {
 	FragmentStackManager fm,sliding_menu;
-	
+	public static MainActivity obj;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,7 +29,10 @@ public class MainActivity extends BaseActivity {
 		fm.addFragment(new MainFragment(), R.id.main_frame, false, FragmentTransaction.TRANSIT_NONE, false);
 		sliding_menu.addFragment(new SlidingMenuFragment(), R.id.slide_fragment, false, FragmentTransaction.TRANSIT_NONE, false);
 	}
-	
+	public void closeDrawer(){
+		if(drawer!=null)
+		drawer.closeDrawers();	
+	}
 	void menuToggeleSetUp(Bundle savedInstanceState){
 		mDrawerToggle = new ActionBarDrawerToggle(this, drawer,
 				R.drawable.ic_drawer, // nav menu toggle icon
