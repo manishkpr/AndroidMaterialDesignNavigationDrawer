@@ -39,6 +39,7 @@ public class SlidingMenuFragment extends Fragment {
 		list_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             		@Override
             		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            		MainActivity.obj.closeDrawer();
                 	Toast.makeText(getActivity(),"Hi "+position,Toast.LENGTH_SHORT).show();
             	}
         	});
